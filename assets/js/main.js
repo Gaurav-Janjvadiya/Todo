@@ -4,7 +4,7 @@ import checkTodo from "./checkTodo.js";
 let todos = [];
 try {
   const deleteButton = document.querySelector(".delete-all-tasks");
-  deleteButton.style.display = todos.length > 0 ? "inline-block" : "none";
+  console.log(deleteButton);
   deleteButton.addEventListener("click", (e) => {
     localStorage.removeItem("todos");
     location.reload();
@@ -45,7 +45,7 @@ try {
             ul.appendChild(li);
           })
           .join("")
-      : "<p>TODOS NOT FOUND</p>";
+      : '<p class="not-found">TODOS NOT FOUND</p>';
 } catch (e) {
   console.log(e);
 }
