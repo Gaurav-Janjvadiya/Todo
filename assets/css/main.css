@@ -53,6 +53,7 @@ main a.goto-link {
   font-size: 1rem;
   margin-bottom: 1rem;
   transition: background-color 0.3s;
+  text-align: center;
 }
 
 main a.goto-link:hover {
@@ -68,7 +69,7 @@ main .delete-all-tasks {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  display: flex;
+  text-align: center;
 }
 
 main .delete-all-tasks:hover {
@@ -125,16 +126,29 @@ main ul li button:hover {
   background-color: #0056b3;
 }
 
+.btn-group {
+  display: grid;
+}
+
 main .not-found {
   text-align: center;
   margin-top: 2rem;
-  font-size: 1.2rem;
-  /* font-weight: bold; */
-  color: #dc3545;
-  background-color: #f8d7da;
+  color: #646464;
   padding: 1rem;
+  text-transform: lowercase;
   border: 1px solid #f5c2c7;
   border-radius: 5px;
+}
+
+main select {
+  outline: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  letter-spacing: 10px;
+  text-align: center;
 }
 
 /* Footer styling */
